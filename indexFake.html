@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Smashle</title>
+        <script type="module" src="./app.js"></script>
+        <script type="module" src="./Characters.js"></script>
+    </head>
+    <style>
+        body{
+            background-attachment: fixed;
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            background-image: url("./images/dadBackground.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+        }
+
+        h1{
+            background-image: repeating-linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 10%;
+            animation: rainbow 5s linear infinite;
+        }
+
+        @keyframes rainbow { 
+            0%{background-position:0% 50%}
+            50%{background-position:100% 25%}
+            100%{background-position:0% 50%}
+        }
+
+        h3.subtitle{
+            color: red;
+            size: 50%;
+            transform:translateY(-5%);
+            animation: slidey 75ms linear infinite;
+        }
+
+        @keyframes slidey{
+            from{transform: translateY(-5%);}
+            to{transform: translateY(5%);}
+        }
+
+        .ugly1 {
+            background: radial-gradient(#a400ff 0, #3b3b3b 10%, #d6d2d200 15%, #0b243a 50%, #d6d2d2 65%, #26483f 80%, #d6d2d200 95%),
+                        repeating-linear-gradient(45deg, #a78b4178, #a548a07a 50px),
+                        repeating-linear-gradient(135deg, #634610, #71b737 50px);
+            width: 500px;
+            height: 500px;
+        }
+
+        h3.thinking{
+            animation: thinking 5s linear infinite;
+        }
+
+        @keyframes thinking {
+            from {
+                background-color: #d00dad;
+                width: 100%;
+                top: 10px;
+            }
+            to {
+                background-color: #daddad;
+                width: 1%;
+                top: 100px;
+            }
+        }
+    </style>
+    <body class="p-3 mb-2 bg-dark bg-gradient text-white">
+        <h1>Smashle</h1>
+        <h3 class="subtitle">
+            A game inspired by wordle for competitive Smash Bros. Players
+        </h3>
+
+        <h3 class="thinking">I'm thinking of a character...</h3>
+
+        <table id="resultsTable" class="ugly1">
+            <thead>
+                <tr>
+                    <td> Name </td><td> Tier </td><td> Fall Speed </td><td> Weight </td><td> Run Speed </td><td> OOS Speed </td>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+            
+        <form id="mainForm">
+            <div class="mb-3">
+                <label for="tbxCharacter" class="form-label">Character</label>
+                <input type="text" class="form-control" id="tbxCharacter">
+                <label id="errors">Guess your character here</label>
+            </div>
+        </form>
+        
+        <p>
+            My dad said I wasn't a web designer and that the old page 
+            looked ugly... So I decided to prove him wrong and show just 
+            how amazing of a designer I can be!
+            You're welcome Dad! 
+            <br/>Love you &lt;3
+        </p>
+
+        <a href="./index.html">Normal version</a>
+    </body>
+</html>
+

@@ -7,9 +7,10 @@ var form = document.getElementById('mainForm');
 var textbox = document.getElementById('tbxCharacter');
 let x = Math.floor((Math.random() * characters.length));
 var randChar = characters[x];
+console.log(randChar.Name)
 var guessedChar;
 var counter = 0;
-console.log(randChar)
+var resultsString = "\n";
 
 // Makes it easier to compare strings
 for (let i=0; i < characters.length; i++){
@@ -30,7 +31,7 @@ function submitButton(){
     var flag = false;
     for (let i=0; i < characters.length; i++){
         var char = characters[i];
-        if (textbox.value == char.Name){
+        if (textbox.value == char.Name || char.aliases.includes(textbox.value)){
             guessedChar = char;
             flag = true;
         }
@@ -46,11 +47,25 @@ function submitButton(){
         document.getElementById("errors").innerText = "Invalid Character";
     }
     textbox.value = ''; // clear the textbox for a cleaner UX
-    if (counter == 5){
+    if (counter == 5 & guessedChar != randChar){
     
         textbox.disabled = true;
-        document.getElementById("errors").innerText = "You Lost";
-        alert("The character was: " + randChar.Name + ". Try again by refreshing the page.");
+        document.getElementById("errors").innerText = "You Lost. The character was " + randChar.Name + "\nRefresh the page to try again!";
+        var popup = document.getElementById("popup");
+        var popupText = document.getElementById("popuptext")
+        popupText.innerHTML = "<h1 align=\"center\">Nice Try!</h1><p align=\"center\"> The character was: " + randChar.image + "</p>";
+        popupText.innerHTML += "<p align=\"center\">(" + randChar.Name + ")</p>";
+        popup.style.display = "block";
+        popupText.innerHTML += '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Smashle Score:' + resultsString + '" data-url="https://mcquaidn.github.io/smashle" data-hashtags="Smashle" data-related="sorryssb" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
+        twttr.widgets.load();
+        form.removeEventListener('submit', function(){
+            console.log("you lost. idk what to put here");
+        });
+        window.onclick = function(event) {
+            if (event.target == popup) {
+              popup.style.display = "none";
+            }
+        }
     }
 }
 
@@ -66,14 +81,34 @@ function newRow(character){
     let weightCell = document.createElement("td");
     let runSpeedCell = document.createElement("td");
     let oosSpeedCell = document.createElement("td");
+    let firstGameCell = document.createElement("td");
 
     // Fills those cells
-    nameCell.innerText = character.Name;
+    nameCell.innerHTML = character.image;
     tierCell.innerText = TierCheck(character);
+    if (tierCell.innerText == "same!"){
+        tierCell.style.backgroundColor = "green";
+    }
     fallSpeedCell.innerText = FallSpeedCheck(character);
+    if (fallSpeedCell.innerText == "same!"){
+        fallSpeedCell.style.backgroundColor = "green";
+    }
     weightCell.innerText = WeightCheck(character);
+    if (weightCell.innerText == "same!"){
+        weightCell.style.backgroundColor = "green";
+    }
     runSpeedCell.innerText = RunSpeedCheck(character);
+    if (runSpeedCell.innerText == "same!"){
+        runSpeedCell.style.backgroundColor = "green";
+    }
     oosSpeedCell.innerText = OOSSpeedCheck(character);
+    if (oosSpeedCell.innerText == "same!"){
+        oosSpeedCell.style.backgroundColor = "green";
+    }
+    firstGameCell.innerText = FirstGameCheck(character);
+    if (firstGameCell.innerText == "same!"){
+        firstGameCell.style.background = "green";
+    }
 
     // adds cells to rows
     row.appendChild(nameCell);
@@ -82,8 +117,12 @@ function newRow(character){
     row.appendChild(weightCell);
     row.appendChild(runSpeedCell);
     row.appendChild(oosSpeedCell);
+    row.appendChild(firstGameCell);
     table.appendChild(row);
 
+    resultsString += "\n";
+
+    // Formats table and shows a modal popup when you win
     if (guessedChar === randChar){
         nameCell.style.backgroundColor = "green";
         tierCell.style.backgroundColor = "green";
@@ -93,62 +132,111 @@ function newRow(character){
         oosSpeedCell.style.backgroundColor = "green";
 
         textbox.disabled = true;
-        document.getElementById("errors").innerText = "You Won!";
-        alert("The character was: " + guessedChar.Name + ". You won!");
+        document.getElementById("errors").innerText = "You Won! Refresh the page to play again.";
+        var popup = document.getElementById("popup");
+        var popupText = document.getElementById("popuptext")
+        popupText.style.backgroundColor = "green"
+        popupText.innerHTML = "<h1 align=\"center\">You won!</h1><p align=\"center\"> The character was: " + randChar.image + "</p>";
+        popupText.innerHTML += "<p align=\"center\">(" + randChar.Name + ")</p>"
+        if (counter == 1){
+            popupText.innerHTML += "<p align=\"center\">First Try!</p>";
+        }
+        else{
+            popupText.innerHTML += "<p align=\"center\">It took " + counter + " tries.</p>";
+        }
+        if (counter == 5){
+            popupText.innerHTML += "<h1 align=\"center\">CLUTCHBOX</h1>";
+            resultsString += "\n**CLUTCHBOX**\n";
+        }
+        popupText.innerHTML += '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Smashle Score:' + resultsString + '" data-url="https://mcquaidn.github.io/smashle" data-hashtags="Smashle" data-related="sorryssb" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
+        twttr.widgets.load()
+        popup.style.display = "block";
+        form.removeEventListener('submit', function(){
+            console.log("you won. idk what to put here but I don't like having an empty function.")
+        });
+        window.onclick = function(event) {
+            if (event.target == popup) {
+              popup.style.display = "none";
+            }
+        }
     }
 }
 
-function clearButton(){
-    console.log("hey")
-    document.getElementById("tableBody").innerHTML = '';
-}
-
+// Functions to check values
 function TierCheck(guessedChar) {
     if (guessedChar.Tier > randChar.Tier) {
-        return "^";
+        resultsString += "🔼";
+        return "Higher";
     } else if (guessedChar.Tier < randChar.Tier) {
-        return "v";
+        resultsString += "🔽";
+        return "Lower";
     } else if (guessedChar.Tier === randChar.Tier) {
-        return "=";
+        resultsString += "✅";
+        return "same!";
     }
 }
 
 function FallSpeedCheck(guessedChar) {
     if (guessedChar.FallSpeed > randChar.FallSpeed) {
-        return "^"; // Slower Fall Speed
+        resultsString += "🔽";
+        return "Slower"; // Slower Fall Speed
     } else if (guessedChar.FallSpeed < randChar.FallSpeed) {
-        return "v"; // Faster Fall Speed
+        resultsString += "🔼";
+        return "Faster"; // Faster Fall Speed
     } else if (guessedChar.FallSpeed === randChar.FallSpeed) {
-        return "="; // Same Fall Speed
+        resultsString += "✅";
+        return "same!"; // Same Fall Speed
     }
 }
 
 function WeightCheck(guessedChar) {
     if (guessedChar.Weight > randChar.Weight) {
-        return "^"; // Lighter
+        resultsString += "🔽";
+        return "Lighter"; // Lighter
     } else if (guessedChar.Weight < randChar.Weight) {
-        return "v"; // Heavier
+        resultsString += "🔼";
+        return "Heavier"; // Heavier
     } else if (guessedChar.Weight === randChar.Weight) {
-        return "="; // Same Weight
+        resultsString += "✅";
+        return "same!"; // Same Weight
     }
 }
 
 function RunSpeedCheck(guessedChar) {
     if (guessedChar.RunSpeed > randChar.RunSpeed) {
-        return "^"; // Slower Run Speed
+        resultsString += "🔽";
+        return "Slower"; // Slower Run Speed
     } else if (guessedChar.RunSpeed < randChar.RunSpeed) {
-        return "v"; // Faster Run Speed
+        resultsString += "🔼";
+        return "Faster"; // Faster Run Speed
     } else if (guessedChar.RunSpeed === randChar.RunSpeed) {
-        return "="; // Same Run Speed
+        resultsString += "✅";
+        return "same!"; // Same Run Speed
     }
 }
 
 function OOSSpeedCheck(guessedChar) {
     if (guessedChar.OOSSpeed > randChar.OOSSpeed) {
-        return "^"; // Faster OOS option
+        resultsString += "🔼";
+        return "Faster"; // Faster OOS option
     } else if (guessedChar.OOSSpeed < randChar.OOSSpeed) {
-        return "v"; // Slower OOS option
+        resultsString += "🔽";
+        return "Slower"; // Slower OOS option
     } else if (guessedChar.OOSSpeed === randChar.OOSSpeed) {
-        return "="; // Same OOS option speed
+        resultsString += "✅";
+        return "same!"; // Same OOS option speed
+    }
+}
+
+function FirstGameCheck(guessedChar) {
+    if (guessedChar.FirstGame > randChar.FirstGame) {
+        resultsString += "⏩";
+        return "Earlier"; // Later first game
+    } else if (guessedChar.FirstGame < randChar.FirstGame) {
+        resultsString += "⏩";
+        return "Later"; // earlier first game
+    } else if (guessedChar.FirstGame === randChar.FirstGame) {
+        resultsString += "✅";
+        return "same!"; // Same game
     }
 }

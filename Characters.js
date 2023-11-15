@@ -2,235 +2,311 @@ export const characters =
 [
     {
       "Name": "Banjo",
-      "Tier": 9,
+      "Tier": 4,
       "FallSpeed": 1.76,
       "Weight": 106,
       "RunSpeed": 2.18,
-      "OOSSpeed": 9
+      "OOSSpeed": 9,
+      "FirstGame": 5,
+      "aliases": ["Banjo And Kazooie"],
+      "image": "<img src=\"./images/banjo.png\"/>"
     },
     {
       "Name": "Bayonetta",
-      "Tier": 6,
+      "Tier": 3,
       "FallSpeed": 1.77,
       "Weight": 81,
       "RunSpeed": 1.76,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 4,
+      "aliases": ["Bayo", "bullshit"],
+      "image": "<img src='./images/bayonetta.png'/>"
     },
     {
       "Name": "Bowser",
-      "Tier": 7,
+      "Tier": 3,
       "FallSpeed": 1.77,
       "Weight": 135,
       "RunSpeed": 1.971,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 2,
+      "aliases": [],
+      "image": "<img src='./images/bowser.png'/>"
     },
     {
       "Name": "Bowser Jr.",
-      "Tier": 9,
+      "Tier": 4,
       "FallSpeed": 1.65,
       "Weight": 108,
       "RunSpeed": 1.566,
-      "OOSSpeed": 7
+      "OOSSpeed": 7,
+      "FirstGame": 4,
+      "aliases": ["Jr", "bowser jr", "lemmy", "morton", "wendy", "iggy", "ludwig"],
+      "image": "<img src='./images/bowserjr.png'/>"
     },
     {
       "Name": "Byleth",
-      "Tier": 5,
+      "Tier": 2,
       "FallSpeed": 1.6,
       "Weight": 97,
       "RunSpeed": 1.43,
-      "OOSSpeed": 9
+      "OOSSpeed": 9,
+      "FirstGame": 5,
+      "aliases": [],
+      "image": "<img src='./images/byleth.png'/>"
     },
     {
       "Name": "Captain Falcon",
-      "Tier": 6,
+      "Tier": 3,
       "FallSpeed": 1.865,
       "Weight": 104,
       "RunSpeed": 2.552,
-      "OOSSpeed": 10
+      "OOSSpeed": 10,
+      "FirstGame": 1,
+      "aliases": ["cpt falcon", "falcon"],
+      "image": "<img src='./images/falcon.png'/>"
     },
     {
       "Name": "Charizard",
-      "Tier": 4,
+      "Tier": 2,
       "FallSpeed": 1.52,
       "Weight": 116,
       "RunSpeed": 2.2,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 3,
+      "aliases": ["zard", "charzard"],
+      "image": "<img src='./images/charizard.png'/>"
     },
     {
       "Name": "Chrom",
-      "Tier": 6,
+      "Tier": 3,
       "FallSpeed": 1.8,
       "Weight": 95,
       "RunSpeed": 2.145,
-      "OOSSpeed": 8
+      "OOSSpeed": 8,
+      "FirstGame": 5,
+      "aliases": [],
+      "image": "<img src='./images/chrom.png'/>"
     },
     {
       "Name": "Cloud",
-      "Tier": 3,
+      "Tier": 1,
       "FallSpeed": 1.68,
       "Weight": 100,
       "RunSpeed": 2.167,
-      "OOSSpeed": 7
+      "OOSSpeed": 7,
+      "FirstGame": 4,
+      "aliases": [],
+      "image": "<img src='./images/cloud.png'/>"
     },
     {
       "Name": "Corrin",
-      "Tier": 6,
+      "Tier": 3,
       "FallSpeed": 1.65,
       "Weight": 98,
       "RunSpeed": 1.595,
-      "OOSSpeed": 9
+      "OOSSpeed": 9,
+      "FirstGame": 4,
+      "aliases": ["corn"],
+      "image": "<img src='./images/corrin.png'/>"
     },
     {
       "Name": "Daisy",
-      "Tier": 2,
+      "Tier": 1,
       "FallSpeed": 1.19,
       "Weight": 89,
       "RunSpeed": 1.595,
-      "OOSSpeed": 7
+      "OOSSpeed": 7,
+      "FirstGame": 5,
+      "aliases": ["HI IM DAISY"],
+      "image": "<img src='./images/daisy.png'/>"
     },
     {
       "Name": "Dark Pit",
-      "Tier": 7,
+      "Tier": 3,
       "FallSpeed": 1.48,
       "Weight": 96,
       "RunSpeed": 1.828,
-      "OOSSpeed": 6
-    },
-    {
-      "Name": "Dark Samus",
-      "Tier": 4,
-      "FallSpeed": 1.33,
-      "Weight": 108,
-      "RunSpeed": 1.654,
-      "OOSSpeed": 4
+      "OOSSpeed": 6,
+      "FirstGame": 4,
+      "aliases": ["dpit"],
+      "image": "<img src='./images/darkpit.png'/>"
     },
     {
       "Name": "Diddy Kong",
-      "Tier": 3,
+      "Tier": 1,
       "FallSpeed": 1.75,
       "Weight": 90,
       "RunSpeed": 2.006,
-      "OOSSpeed": 5
+      "OOSSpeed": 5,
+      "FirstGame": 3,
+      "aliases": ["diddy"],
+      "image": "<img src='./images/diddy.png'/>"
     },
     {
       "Name": "Donkey Kong",
-      "Tier": 9,
+      "Tier": 4,
       "FallSpeed": 1.63,
       "Weight": 127,
       "RunSpeed": 1.873,
-      "OOSSpeed": 7
+      "OOSSpeed": 7,
+      "FirstGame": 1,
+      "aliases": ["dk"],
+      "image": "<img src='./images/dk.png'/>"
     },
     {
       "Name": "Dr. Mario",
-      "Tier": 10,
+      "Tier": 5,
       "FallSpeed": 1.5,
       "Weight": 98,
       "RunSpeed": 1.397792,
-      "OOSSpeed": 3
+      "OOSSpeed": 3,
+      "FirstGame": 2,
+      "aliases": ["dr mario", "drmario", "dmario"],
+      "image": "<img src='./images/drmario.png'/>"
     },
     {
       "Name": "Duck Hunt",
-      "Tier": 9,
+      "Tier": 4,
       "FallSpeed": 1.65,
       "Weight": 86,
       "RunSpeed": 1.793,
-      "OOSSpeed": 9
+      "OOSSpeed": 9,
+      "FirstGame": 4,
+      "aliases": ["jmon", "bigduckhuntfan7000"],
+      "image": "<img src='./images/duckhunt.png'/>"
     },
     {
       "Name": "Falco",
-      "Tier": 6,
+      "Tier": 3,
       "FallSpeed": 1.8,
       "Weight": 82,
       "RunSpeed": 1.619,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 2,
+      "aliases": [],
+      "image": "<img src='./images/falco.png'/>"
     },
     {
       "Name": "Fox",
-      "Tier": 2,
+      "Tier": 1,
       "FallSpeed": 2.1,
       "Weight": 77,
       "RunSpeed": 2.402,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 1,
+      "aliases": [],
+      "image": "<img src='./images/fox.png'/>"
     },
     {
       "Name": "Ganondorf",
-      "Tier": 11,
+      "Tier": 5,
       "FallSpeed": 1.65,
       "Weight": 118,
       "RunSpeed": 1.34,
-      "OOSSpeed": 10
+      "OOSSpeed": 10,
+      "FirstGame": 2,
+      "aliases": ["ganon"],
+      "image": "<img src='./images/ganon.png'/>"
     },
     {
       "Name": "Greninja",
-      "Tier": 5,
+      "Tier": 2,
       "FallSpeed": 1.85,
       "Weight": 88,
       "RunSpeed": 2.288,
-      "OOSSpeed": 8
+      "OOSSpeed": 8,
+      "FirstGame": 4,
+      "aliases": ["gren"],
+      "image": "<img src='./images/greninja.png'/>"
     },
     {
       "Name": "Hero",
-      "Tier": 6,
+      "Tier": 3,
       "FallSpeed": 1.57,
       "Weight": 101,
       "RunSpeed": 1.84,
-      "OOSSpeed": 7
+      "OOSSpeed": 7,
+      "FirstGame": 5,
+      "aliases": ["thorn", "brave"],
+      "image": "<img src='./images/hero.png'/>"
     },
     {
       "Name": "Ice Climbers",
-      "Tier": 7,
+      "Tier": 3,
       "FallSpeed": 1.3,
       "Weight": 92,
       "RunSpeed": 1.53,
-      "OOSSpeed": 9
+      "OOSSpeed": 9,
+      "FirstGame": 2,
+      "aliases": ["ics", "icies", "climbers", "juansolo", "worms", "big d"],
+      "image": "<img src='./images/icies.png'/>"
     },
     {
       "Name": "Ike",
-      "Tier": 9,
+      "Tier": 4,
       "FallSpeed": 1.65,
       "Weight": 107,
       "RunSpeed": 1.507,
-      "OOSSpeed": 10
+      "OOSSpeed": 10,
+      "FirstGame": 3,
+      "aliases": [],
+      "image": "<img src='./images/ike.png'/>"
     },
     {
       "Name": "Incineroar",
-      "Tier": 8,
+      "Tier": 4,
       "FallSpeed": 1.76,
       "Weight": 116,
       "RunSpeed": 1.18,
-      "OOSSpeed": 8
+      "OOSSpeed": 8,
+      "FirstGame": 5,
+      "aliases": ["incin", "incinaroar", "incinoroar"],
+      "image": "<img src='./images/incineroar.png'/>"
     },
     {
       "Name": "Inkling",
-      "Tier": 6,
+      "Tier": 3,
       "FallSpeed": 1.58,
       "Weight": 94,
       "RunSpeed": 1.925,
-      "OOSSpeed": 9
+      "OOSSpeed": 9,
+      "FirstGame": 5,
+      "aliases": [],
+      "image": "<img src='./images/inkling.png'/>"
     },
     {
       "Name": "Isabelle",
-      "Tier": 10,
+      "Tier": 5,
       "FallSpeed": 1.3,
       "Weight": 88,
       "RunSpeed": 1.48,
-      "OOSSpeed": 8
+      "OOSSpeed": 8,
+      "FirstGame": 5,
+      "aliases": ["izzy", "izziibell"],
+      "image": "<img src='./images/isabelle.png'/>"
     },
     {
       "Name": "Ivysaur",
-      "Tier": 4,
+      "Tier": 2,
       "FallSpeed": 1.38,
       "Weight": 96,
       "RunSpeed": 1.595,
-      "OOSSpeed": 10
+      "OOSSpeed": 10,
+      "FirstGame": 3,
+      "aliases": ["ivy", "venasaur", "bulbasaur", "cabbage patch bitch"],
+      "image": "<img src='./images/ivysaur.png'/>"
     },
     {
       "Name": "Jigglypuff",
-      "Tier": 8,
+      "Tier": 4,
       "FallSpeed": 0.98,
       "Weight": 68,
       "RunSpeed": 1.271,
-      "OOSSpeed": 5
+      "OOSSpeed": 5,
+      "FirstGame": 1,
+      "aliases": ["puff", "jiggly", "hbox", "young mango"],
+      "image": "<img src='./images/jigglypuff.png'/>"
     },
     {
       "Name": "Joker",
@@ -238,175 +314,241 @@ export const characters =
       "FallSpeed": 1.63,
       "Weight": 93,
       "RunSpeed": 2.06,
-      "OOSSpeed": 8
+      "OOSSpeed": 8,
+      "FirstGame": 5,
+      "aliases": [],
+      "image": "<img src='./images/joker.png'/>"
     },
     {
       "Name": "Kazuya",
-      "Tier": 2,
+      "Tier": 1,
       "FallSpeed": 1.7,
       "Weight": 113,
       "RunSpeed": 1.55,
-      "OOSSpeed": 11
+      "OOSSpeed": 11,
+      "FirstGame": 5,
+      "aliases": ["kaz", "mishima"],
+      "image": "<img src='./images/kazuya.png'/>"
     },
     {
       "Name": "Ken",
-      "Tier": 5,
+      "Tier": 2,
       "FallSpeed": 1.6,
       "Weight": 103,
       "RunSpeed": 1.76,
-      "OOSSpeed": 5
+      "OOSSpeed": 5,
+      "FirstGame": 5,
+      "aliases": [],
+      "image": "<img src='./images/ken.png'/>"
     },
     {
       "Name": "King Dedede",
-      "Tier": 10,
+      "Tier": 5,
       "FallSpeed": 1.95,
       "Weight": 127,
       "RunSpeed": 1.496,
-      "OOSSpeed": 10
+      "OOSSpeed": 10,
+      "FirstGame": 3,
+      "aliases": ["dedede", "d3", "king daddledingo", "roi dadidou"],
+      "image": "<img src='./images/dedede.png'/>"
     },
     {
       "Name": "K Rool",
-      "Tier": 10,
+      "Tier": 5,
       "FallSpeed": 1.7,
       "Weight": 133,
       "RunSpeed": 1.485,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 5,
+      "aliases": ["krool", "krule", "k rule", "king k rool", "king krool"],
+      "image": "<img src='./images/krool.png'/>"
     },
     {
       "Name": "Kirby",
-      "Tier": 10,
+      "Tier": 5,
       "FallSpeed": 1.23,
       "Weight": 79,
       "RunSpeed": 1.727,
-      "OOSSpeed": 9
+      "OOSSpeed": 9,
+      "FirstGame": 1,
+      "aliases": ["kirb", "koiby"],
+      "image": "<img src='./images/kirby.png'/>"
     },
     {
       "Name": "Link",
-      "Tier": 7,
+      "Tier": 3,
       "FallSpeed": 1.6,
       "Weight": 104,
       "RunSpeed": 1.534,
-      "OOSSpeed": 7
+      "OOSSpeed": 7,
+      "FirstGame": 1,
+      "aliases": [],
+      "image": "<img src='./images/link.png'/>"
     },
     {
       "Name": "Little Mac",
-      "Tier": 11,
+      "Tier": 5,
       "FallSpeed": 1.95,
       "Weight": 87,
       "RunSpeed": 2.464,
-      "OOSSpeed": 3
+      "OOSSpeed": 3,
+      "FirstGame": 4,
+      "aliases": ["mac", "lil mac"],
+      "image": "<img src='./images/littlemac.png'/>"
     },
     {
       "Name": "Lucario",
-      "Tier": 9,
+      "Tier": 4,
       "FallSpeed": 1.68,
       "Weight": 92,
       "RunSpeed": 1.705,
-      "OOSSpeed": 7
+      "OOSSpeed": 7,
+      "FirstGame": 3,
+      "aliases": ["mario wario"],
+      "image": "<img src='./images/lucario.png'/>"
     },
     {
       "Name": "Lucas",
-      "Tier": 8,
+      "Tier": 4,
       "FallSpeed": 1.37,
       "Weight": 94,
       "RunSpeed": 1.65,
-      "OOSSpeed": 10
+      "OOSSpeed": 10,
+      "FirstGame": 3,
+      "aliases": [],
+      "image": "<img src='./images/lucas.png'/>"
     },
     {
       "Name": "Lucina",
-      "Tier": 4,
+      "Tier": 2,
       "FallSpeed": 1.58,
       "Weight": 90,
       "RunSpeed": 1.964,
-      "OOSSpeed": 5
+      "OOSSpeed": 5,
+      "FirstGame": 4,
+      "aliases": ["lucy"],
+      "image": "<img src='./images/lucina.png'/>"
     },
     {
       "Name": "Luigi",
-      "Tier": 6,
+      "Tier": 3,
       "FallSpeed": 1.32,
       "Weight": 97,
       "RunSpeed": 1.65,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 1,
+      "aliases": ["loogi", "landon"],
+      "image": "<img src='./images/luigi.png'/>"
     },
     {
       "Name": "Mario",
-      "Tier": 4,
+      "Tier": 2,
       "FallSpeed": 1.5,
       "Weight": 98,
       "RunSpeed": 1.76,
-      "OOSSpeed": 3
+      "OOSSpeed": 3,
+      "FirstGame": 1,
+      "aliases": ["anai"],
+      "image": "<img src='./images/mario.png'/>"
     },
     {
       "Name": "Marth",
-      "Tier": 7,
+      "Tier": 3,
       "FallSpeed": 1.58,
       "Weight": 90,
       "RunSpeed": 1.964,
-      "OOSSpeed": 5
+      "OOSSpeed": 5,
+      "FirstGame": 2,
+      "aliases": ["marf"],
+      "image": "<img src='./images/marth.png'/>"
     },
     {
       "Name": "Mega Man",
-      "Tier": 5,
+      "Tier": 2,
       "FallSpeed": 1.8,
       "Weight": 102,
       "RunSpeed": 1.602,
-      "OOSSpeed": 7
+      "OOSSpeed": 7,
+      "FirstGame": 4,
+      "aliases": ["mman", "megaman", "rockman"],
+      "image": "<img src='./images/megaman.png'/>"
     },
     {
       "Name": "Meta Knight",
-      "Tier": 7,
+      "Tier": 3,
       "FallSpeed": 1.66,
       "Weight": 80,
       "RunSpeed": 2.09,
-      "OOSSpeed": 7
+      "OOSSpeed": 7,
+      "FirstGame": 3,
+      "aliases": ["mk", "metaknight"],
+      "image": "<img src='./images/metaknight.png'/>"
     },
     {
       "Name": "Mewtwo",
-      "Tier": 8,
+      "Tier": 4,
       "FallSpeed": 1.55,
       "Weight": 79,
       "RunSpeed": 2.255,
-      "OOSSpeed": 9
+      "OOSSpeed": 9,
+      "FirstGame": 2,
+      "aliases": ["yung leff", "m2", "mew2"],
+      "image": "<img src='./images/mewtwo.png'/>"
     },
     {
       "Name": "Mii Brawler",
-      "Tier": 5,
+      "Tier": 2,
       "FallSpeed": 1.91,
       "Weight": 94,
       "RunSpeed": 1.92,
-      "OOSSpeed": 3
+      "OOSSpeed": 3,
+      "FirstGame": 4,
+      "aliases": ["brawler", "fighter"],
+      "image": "<img src='./images/miibrawler.png'/>"
     },
     {
       "Name": "Mii Gunner",
-      "Tier": 8,
+      "Tier": 4,
       "FallSpeed": 1.45,
       "Weight": 104,
       "RunSpeed": 1.37,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 4,
+      "aliases": ["gunner"],
+      "image": "<img src='./images/miigunner.png'/>"
     },
     {
       "Name": "Mii Swordfighter",
-      "Tier": 10,
+      "Tier": 5,
       "FallSpeed": 1.55,
       "Weight": 100,
       "RunSpeed": 1.58,
-      "OOSSpeed": 8
+      "OOSSpeed": 8,
+      "FirstGame": 4,
+      "aliases": ["swordie", "nicksf", "goatsf", "swordfighter"],
+      "image": "<img src='./images/miiswordfighter.png'/>"
     },
     {
       "Name": "Min Min",
-      "Tier": 3,
+      "Tier": 1,
       "FallSpeed": 1.5,
       "Weight": 104,
       "RunSpeed": 1.55,
-      "OOSSpeed": 7
+      "OOSSpeed": 7,
+      "FirstGame": 5,
+      "aliases": ["minmin", "noodle bitch"],
+      "image": "<img src='./images/minmin.png'/>"
     },
     {
       "Name": "Mr. Game & Watch",
-      "Tier": 3,
+      "Tier": 1,
       "FallSpeed": 1.24,
       "Weight": 75,
       "RunSpeed": 1.679,
-      "OOSSpeed": 3
+      "OOSSpeed": 3,
+      "FirstGame": 2,
+      "aliases": ["gnw", "game and watch", "game n watch", "mr game and watch", "mr game & watch", "g&w"],
+      "image": "<img src='./images/gnw.png'/>"
     },
     {
       "Name": "Mythra",
@@ -414,79 +556,109 @@ export const characters =
       "FallSpeed": 1.87,
       "Weight": 92,
       "RunSpeed": 2.41,
-      "OOSSpeed": 9
+      "OOSSpeed": 9,
+      "FirstGame": 5,
+      "aliases": [],
+      "image": "<img src='./images/mythra.png'/>"
     },
     {
       "Name": "Ness",
-      "Tier": 6,
+      "Tier": 3,
       "FallSpeed": 1.31,
       "Weight": 94,
       "RunSpeed": 1.609,
-      "OOSSpeed": 8
+      "OOSSpeed": 8,
+      "FirstGame": 1,
+      "aliases": [],
+      "image": "<img src='./images/ness.png'/>"
     },
     {
       "Name": "Olimar",
-      "Tier": 5,
+      "Tier": 2,
       "FallSpeed": 1.35,
       "Weight": 79,
       "RunSpeed": 1.617,
-      "OOSSpeed": 10
+      "OOSSpeed": 10,
+      "FirstGame": 3,
+      "aliases": ["oli", "pikmin", "olimar and pikmin", "alph", "louie"],
+      "image": "<img src='./images/olimar.png'/>"
     },
     {
       "Name": "Pac-Man",
-      "Tier": 3,
+      "Tier": 1,
       "FallSpeed": 1.35,
       "Weight": 95,
       "RunSpeed": 1.672,
-      "OOSSpeed": 4
+      "OOSSpeed": 4,
+      "FirstGame": 4,
+      "aliases": ["pac man", "pacman", "fuck man"],
+      "image": "<img src='./images/pacman.png'/>"
     },
     {
       "Name": "Palutena",
-      "Tier": 3,
+      "Tier": 1,
       "FallSpeed": 1.55,
       "Weight": 91,
       "RunSpeed": 2.077,
-      "OOSSpeed": 8
+      "OOSSpeed": 8,
+      "FirstGame": 4,
+      "aliases": ["palu"],
+      "image": "<img src='./images/palutena.png'/>"
     },
     {
       "Name": "Peach",
-      "Tier": 2,
+      "Tier": 1,
       "FallSpeed": 1.19,
       "Weight": 89,
       "RunSpeed": 1.595,
-      "OOSSpeed": 7
+      "OOSSpeed": 7,
+      "FirstGame": 2,
+      "aliases": ["princess peach", "toadstool", "princess toadstool"],
+      "image": "<img src='./images/peach.png'/>"
     },
     {
       "Name": "Pichu",
-      "Tier": 7,
+      "Tier": 3,
       "FallSpeed": 1.9,
       "Weight": 62,
       "RunSpeed": 1.892,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 2,
+      "aliases": ["pchu"],
+      "image": "<img src='./images/pichu.png'/>"
     },
     {
       "Name": "Pikachu",
-      "Tier": 3,
+      "Tier": 1,
       "FallSpeed": 1.55,
       "Weight": 79,
       "RunSpeed": 2.039,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 1,
+      "aliases": ["pika", "rat"],
+      "image": "<img src='./images/pikachu.png'/>"
     },
     {
       "Name": "Piranha Plant",
-      "Tier": 10,
+      "Tier": 5,
       "FallSpeed": 1.95,
       "Weight": 112,
       "RunSpeed": 1.72,
-      "OOSSpeed": 10
+      "OOSSpeed": 10,
+      "FirstGame": 5,
+      "aliases": ["plant", "petey", "pirana plant", "pirahna plant", "petey piranha", "petey pirahna"],
+      "image": "<img src='./images/plant.png'/>"
     },
     {
       "Name": "Pit",
-      "Tier": 7,
+      "Tier": 3,
       "FallSpeed": 1.48,
       "Weight": 96,
       "RunSpeed": 1.828,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 3,
+      "aliases": ["HIYAYAYAYA"],
+      "image": "<img src='./images/pit.png'/>"
     },
     {
       "Name": "Pyra",
@@ -494,135 +666,197 @@ export const characters =
       "FallSpeed": 1.62,
       "Weight": 98,
       "RunSpeed": 1.69,
-      "OOSSpeed": 13
+      "OOSSpeed": 13,
+      "FirstGame": 5,
+      "aliases": [],
+      "image": "<img src='./images/pyra.png'/>"
     },
     {
       "Name": "R.O.B.",
-      "Tier": 2,
+      "Tier": 1,
       "FallSpeed": 1.6,
       "Weight": 106,
       "RunSpeed": 1.725,
-      "OOSSpeed": 9
-    },
-    {
-      "Name": "Richter",
-      "Tier": 9,
-      "FallSpeed": 1.85,
-      "Weight": 107,
-      "RunSpeed": 1.52,
-      "OOSSpeed": 6
+      "OOSSpeed": 9,
+      "FirstGame": 3,
+      "aliases": ["rob", "r o b", "robert", "r.o.b"],
+      "image": "<img src='./images/rob.png'/>"
     },
     {
       "Name": "Ridley",
-      "Tier": 8,
+      "Tier": 4,
       "FallSpeed": 1.78,
       "Weight": 107,
       "RunSpeed": 2.2,
-      "OOSSpeed": 11
+      "OOSSpeed": 11,
+      "FirstGame": 5,
+      "aliases": [],
+      "image": "<img src='./images/ridley.png'/>"
     },
     {
       "Name": "Robin",
-      "Tier": 8,
+      "Tier": 4,
       "FallSpeed": 1.5,
       "Weight": 95,
       "RunSpeed": 1.265,
-      "OOSSpeed": 8
+      "OOSSpeed": 8,
+      "FirstGame": 4,
+      "aliases": ["reflet"],
+      "image": "<img src='./images/robin.png'/>"   
     },
     {
       "Name": "Rosalina & Luma",
-      "Tier": 7,
+      "Tier": 3,
       "FallSpeed": 1.2,
       "Weight": 82,
       "RunSpeed": 1.795,
-      "OOSSpeed": 8
+      "OOSSpeed": 8,
+      "FirstGame": 4,
+      "aliases": ["rosalina", "rosa", "rosaluma", "rosalina and luma"],
+      "image": "<img src='./images/rosalina.png'/>"
     },
     {
       "Name": "Roy",
-      "Tier": 2,
+      "Tier": 1,
       "FallSpeed": 1.8,
       "Weight": 95,
       "RunSpeed": 2.145,
-      "OOSSpeed": 8
+      "OOSSpeed": 8,
+      "FirstGame": 2,
+      "aliases": ["our boy"],
+      "image": "<img src='./images/roy.png'/>"
     },
     {
       "Name": "Ryu",
-      "Tier": 5,
+      "Tier": 2,
       "FallSpeed": 1.6,
       "Weight": 103,
       "RunSpeed": 1.6,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 4,
+      "aliases": [],
+      "image": "<img src='./images/Ryu.png'/>"
     },
     {
       "Name": "Samus",
-      "Tier": 4,
+      "Tier": 2,
       "FallSpeed": 1.33,
       "Weight": 108,
       "RunSpeed": 1.654,
-      "OOSSpeed": 4
+      "OOSSpeed": 4,
+      "FirstGame": 1,
+      "aliases": [],
+      "image": "<img src='./images/samus.png'/>"
+    },
+    {
+      "Name": "Dark Samus",
+      "Tier": 2,
+      "FallSpeed": 1.33,
+      "Weight": 108,
+      "RunSpeed": 1.654,
+      "OOSSpeed": 4,
+      "FirstGame": 5,
+      "aliases": ["dsamus", "darksamus"],
+      "image": "<img src='./images/darksamus.png'/>"
     },
     {
       "Name": "Sephiroth",
-      "Tier": 4,
+      "Tier": 2,
       "FallSpeed": 1.84,
       "Weight": 79,
       "RunSpeed": 1.86,
-      "OOSSpeed": 12
+      "OOSSpeed": 12,
+      "FirstGame": 5,
+      "aliases": ["seph", "sep", "sepiroth", "sephirothken", "sefiroth"],
+      "image": "<img src='./images/sephiroth.png'/>"
     },
     {
       "Name": "Sheik",
-      "Tier": 5,
+      "Tier": 2,
       "FallSpeed": 1.75,
       "Weight": 78,
       "RunSpeed": 2.42,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 2,
+      "aliases": ["shiek"],
+      "image": "<img src='./images/sheik.png'/>"
     },
     {
       "Name": "Shulk",
-      "Tier": 3,
+      "Tier": 1,
       "FallSpeed": 1.58,
       "Weight": 97,
       "RunSpeed": 1.672,
-      "OOSSpeed": 10
+      "OOSSpeed": 10,
+      "FirstGame": 4,
+      "aliases": ["elijmin"],
+      "image": "<img src='./images/shulk.png'/>"
     },
     {
       "Name": "Simon",
-      "Tier": 9,
+      "Tier": 4,
       "FallSpeed": 1.85,
       "Weight": 107,
       "RunSpeed": 1.52,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 5,
+      "aliases": [],
+      "image": "<img src='./images/simon.png'/>"
+    },
+    {
+      "Name": "Richter",
+      "Tier": 4,
+      "FallSpeed": 1.85,
+      "Weight": 107,
+      "RunSpeed": 1.52,
+      "OOSSpeed": 6,
+      "FirstGame": 5,
+      "aliases": ["rickter"],
+      "image": "<img src='./images/richter.png'/>"
     },
     {
       "Name": "Snake",
-      "Tier": 3,
+      "Tier": 1,
       "FallSpeed": 1.73,
       "Weight": 106,
       "RunSpeed": 1.595,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 3,
+      "aliases": ["sorry", "aden", "grape", "apollokage"],
+      "image": "<img src='./images/snake.png'/>"
     },
     {
       "Name": "Sonic",
-      "Tier": 2,
+      "Tier": 1,
       "FallSpeed": 1.65,
       "Weight": 86,
       "RunSpeed": 3.85,
-      "OOSSpeed": 8
+      "OOSSpeed": 8,
+      "FirstGame": 3,
+      "aliases": [],
+      "image": "<img src='./images/sonic.png'/>"
     },
     {
       "Name": "Sora",
-      "Tier": 5,
+      "Tier": 2,
       "FallSpeed": 1.44,
       "Weight": 85,
       "RunSpeed": 1.58,
-      "OOSSpeed": 9
+      "OOSSpeed": 9,
+      "FirstGame": 5,
+      "aliases": ["mickey"],
+      "image": "<img src='./images/sora.png'/>"
     },
     {
       "Name": "Squirtle",
-      "Tier": 4,
+      "Tier": 2,
       "FallSpeed": 1.35,
       "Weight": 75,
       "RunSpeed": 1.76,
-      "OOSSpeed": 7
+      "OOSSpeed": 7,
+      "FirstGame": 3,
+      "aliases": ["squirdle"],
+      "image": "<img src='./images/squirtle.png'/>"
     },
     {
       "Name": "Steve",
@@ -630,86 +864,119 @@ export const characters =
       "FallSpeed": 1.42,
       "Weight": 92,
       "RunSpeed": 1.45,
-      "OOSSpeed": 7
+      "OOSSpeed": 7,
+      "FirstGame": 5,
+      "aliases": ["alex", "minecraft", "minecraft man", "enderman", "zombie"],
+      "image": "<img src='./images/steve.png'/>"
     },
     {
       "Name": "Terry",
-      "Tier": 5,
+      "Tier": 2,
       "FallSpeed": 1.48,
       "Weight": 108,
       "RunSpeed": 1.72,
-      "OOSSpeed": 7
+      "OOSSpeed": 7,
+      "FirstGame": 5,
+      "aliases": ["bogard", "terry bogard"],
+      "image": "<img src='./images/terry.png'/>"
     },
     {
       "Name": "Toon Link",
-      "Tier": 7,
+      "Tier": 3,
       "FallSpeed": 1.38,
       "Weight": 91,
       "RunSpeed": 1.906,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 3,
+      "aliases": ["tlink", "tink", "toonlink"],
+      "image": "<img src='./images/toonlink.png'/>"
     },
     {
       "Name": "Villager",
-      "Tier": 9,
+      "Tier": 4,
       "FallSpeed": 1.32,
       "Weight": 92,
       "RunSpeed": 1.397,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 4,
+      "aliases": ["villy", "habitant", "killager", "chillager"],
+      "image": "<img src='./images/villager.png'/>"
     },
     {
       "Name": "Wario",
-      "Tier": 4,
+      "Tier": 2,
       "FallSpeed": 1.61,
       "Weight": 107,
       "RunSpeed": 1.65,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 3,
+      "aliases": [],
+      "image": "<img src='./images/wario.png'/>"
     },
     {
       "Name": "Wii Fit Trainer",
-      "Tier": 8,
+      "Tier": 4,
       "FallSpeed": 1.3,
       "Weight": 96,
       "RunSpeed": 1.866,
-      "OOSSpeed": 5
+      "OOSSpeed": 5,
+      "FirstGame": 4,
+      "aliases": ["wft", "wii fit"],
+      "image": "<img src='./images/wiifit.png'/>"
     },
     {
       "Name": "Wolf",
-      "Tier": 3,
+      "Tier": 1,
       "FallSpeed": 1.8,
       "Weight": 92,
       "RunSpeed": 1.54,
-      "OOSSpeed": 10
+      "OOSSpeed": 10,
+      "FirstGame": 3,
+      "aliases": ["wolf o'donnel", "wolf odonnel"],
+      "image": "<img src='./images/wolf.png'/>"
     },
     {
       "Name": "Yoshi",
-      "Tier": 4,
+      "Tier": 2,
       "FallSpeed": 1.29,
       "Weight": 104,
       "RunSpeed": 2.046,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 1,
+      "aliases": [],
+      "image": "<img src='./images/yoshi.png'/>"
     },
     {
       "Name": "Young Link",
-      "Tier": 5,
+      "Tier": 2,
       "FallSpeed": 1.8,
       "Weight": 88,
       "RunSpeed": 1.749,
-      "OOSSpeed": 7
+      "OOSSpeed": 7,
+      "FirstGame": 2,
+      "aliases": ["yink", "ylink", "younglink", "yung link"],
+      "image": "<img src='./images/younglink.png'/>"
     },
     {
       "Name": "Zelda",
-      "Tier": 10,
+      "Tier": 5,
       "FallSpeed": 1.35,
       "Weight": 85,
       "RunSpeed": 1.43,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 2,
+      "aliases": ["zorldo"],
+      "image": "<img src='./images/zelda.png'/>"
     },
     {
       "Name": "Zero Suit Samus",
-      "Tier": 4,
+      "Tier": 2,
       "FallSpeed": 1.7,
       "Weight": 80,
       "RunSpeed": 2.31,
-      "OOSSpeed": 6
+      "OOSSpeed": 6,
+      "FirstGame": 3,
+      "aliases": ["zss", "zero suit"],
+      "image": "<img src='./images/zss.png'/>"
     }
    ];
