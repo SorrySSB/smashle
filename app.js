@@ -7,7 +7,7 @@ var form = document.getElementById('mainForm');
 var textbox = document.getElementById('tbxCharacter');
 let x = Math.floor((Math.random() * characters.length));
 var randChar = characters[x];
-console.log(randChar.Name)
+// console.log(randChar.Name)
 var guessedChar;
 var counter = 0;
 var resultsString = "\n";
@@ -42,6 +42,8 @@ function submitButton(){
         document.getElementById("errors").innerText = "Valid character";
         counter++;
         newRow(guessedChar);
+        document.getElementById("guessCount").innerText += " X"
+        document.getElementById("mainContainer").style.zoom = "0.8"
     }
     else{
         document.getElementById("errors").innerText = "Invalid Character";
@@ -56,11 +58,16 @@ function submitButton(){
         popupText.innerHTML = "<h1 align=\"center\">Nice Try!</h1><p align=\"center\"> The character was: " + randChar.image + "</p>";
         popupText.innerHTML += "<p align=\"center\">(" + randChar.Name + ")</p>";
         popup.style.display = "block";
-        popupText.innerHTML += '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Smashle Score:' + resultsString + '" data-url="https://mcquaidn.github.io/smashle" data-hashtags="Smashle" data-related="sorryssb" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
+        popupText.innerHTML += '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Smashle Score:' + resultsString + '" data-url="https://sorryssb.github.io/smashlePublic" data-hashtags="Smashle" data-related="sorryssb" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
         twttr.widgets.load();
         form.removeEventListener('submit', function(){
             console.log("you lost. idk what to put here");
         });
+        popupText.innerHTML += '<br/><button id="refresh" class="btn btn-light">Click me to try again!</button>'
+        let refresh = document.getElementById("refresh")
+        refresh.addEventListener("click", function(){
+            window.location.reload()
+        })
         window.onclick = function(event) {
             if (event.target == popup) {
               popup.style.display = "none";
@@ -148,7 +155,7 @@ function newRow(character){
             popupText.innerHTML += "<h1 align=\"center\">CLUTCHBOX</h1>";
             resultsString += "\n**CLUTCHBOX**\n";
         }
-        popupText.innerHTML += '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Smashle Score:' + resultsString + '" data-url="https://mcquaidn.github.io/smashle" data-hashtags="Smashle" data-related="sorryssb" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
+        popupText.innerHTML += '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Smashle Score:' + resultsString + '" data-url="https://sorryssb.github.io/smashlePublic" data-hashtags="Smashle" data-related="sorryssb" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
         twttr.widgets.load()
         popup.style.display = "block";
         form.removeEventListener('submit', function(){

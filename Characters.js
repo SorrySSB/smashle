@@ -173,7 +173,7 @@ export const characters =
       "RunSpeed": 1.793,
       "OOSSpeed": 9,
       "FirstGame": 4,
-      "aliases": ["jmon", "bigduckhuntfan7000"],
+      "aliases": ["jmon", "bigduckhuntfan7000", "dhd", "duckhunt", "duck hunt dog"],
       "image": "<img src='./images/duckhunt.png'/>"
     },
     {
@@ -184,7 +184,7 @@ export const characters =
       "RunSpeed": 1.619,
       "OOSSpeed": 6,
       "FirstGame": 2,
-      "aliases": [],
+      "aliases": ["flaco"],
       "image": "<img src='./images/falco.png'/>"
     },
     {
@@ -195,7 +195,7 @@ export const characters =
       "RunSpeed": 2.402,
       "OOSSpeed": 6,
       "FirstGame": 1,
-      "aliases": [],
+      "aliases": ["TORYAH"],
       "image": "<img src='./images/fox.png'/>"
     },
     {

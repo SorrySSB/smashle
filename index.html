@@ -16,17 +16,20 @@
             background-attachment: fixed;
         }
 
-        .mainContainer{
-            padding-left: 5%;
-            padding-right: 5%;
-        }
-
-        form{
-            padding: 10%;
+        table{
+            width: 100vw;
         }
 
         h1, h3{
             text-align: center;
+        }
+
+        .twitter-share-button{
+            zoom: 150%;
+        }
+
+        .mainContainer{
+            padding:0%;
         }
 
         .popup{
@@ -49,10 +52,11 @@
             padding: 20px;
             border: 1px solid #888;
             width: 80%;
+            text-align: center;
         }
     </style>
     <body class="p-3 mb-2 bg-dark bg-gradient text-white">
-        <div class="mainContainer">
+        <div class="mainContainer" id="mainContainer">
             <script>window.twttr = (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0],
                   t = window.twttr || {};
@@ -78,14 +82,15 @@
 
             <div id="popup" class="popup"> 
                 <div id="popuptext" class="popup-content">
-                    testing
                 </div>
             </div>
+
+            <p><strong id="guessCount">Guesses: </strong> / 5</p>
 
             <table id="resultsTable" class="table table-bordered table-dark">
                 <thead class="thead-dark">
                     <tr>
-                        <td> Character </td><td> Tier </td><td> Fall Speed </td><td> Weight </td><td> Run Speed </td><td> OOS Speed </td> <td> First Game </td>
+                        <td> Char </td><td> Tier </td><td> Fall Spd </td><td> Weight </td><td> Run Speed </td><td> OOS Speed </td> <td> First Game </td>
                     </tr>
                 </thead>
                 <tbody id="tableBody">
