@@ -7,7 +7,7 @@ var form = document.getElementById('mainForm');
 var textbox = document.getElementById('tbxCharacter');
 let x = Math.floor((Math.random() * characters.length));
 var randChar = characters[x];
-// console.log(randChar.Name)
+ console.log(randChar.Name)
 var guessedChar;
 var counter = 0;
 var resultsString = "\n";
@@ -158,6 +158,7 @@ function newRow(character){
         popupText.innerHTML += '<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Smashle Score:' + resultsString + '" data-url="https://sorryssb.github.io/smashlePublic" data-hashtags="Smashle" data-related="sorryssb" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
         twttr.widgets.load()
         popup.style.display = "block";
+        popupText.innerHTML += '<br/><button id="refresh" class="btn btn-light">Click me to try again!</button>'
         form.removeEventListener('submit', function(){
             console.log("you won. idk what to put here but I don't like having an empty function.")
         });
