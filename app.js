@@ -7,7 +7,7 @@ var form = document.getElementById('mainForm');
 var textbox = document.getElementById('tbxCharacter');
 let x = Math.floor((Math.random() * characters.length));
 var randChar = characters[x];
- console.log(randChar.Name)
+// console.log(randChar.Name)
 var guessedChar;
 var counter = 0;
 var resultsString = "\n";
@@ -159,6 +159,10 @@ function newRow(character){
         twttr.widgets.load()
         popup.style.display = "block";
         popupText.innerHTML += '<br/><button id="refresh" class="btn btn-light">Click me to try again!</button>'
+        let refresh = document.getElementById("refresh")
+        refresh.addEventListener("click", function(){
+            window.location.reload()
+        })
         form.removeEventListener('submit', function(){
             console.log("you won. idk what to put here but I don't like having an empty function.")
         });
